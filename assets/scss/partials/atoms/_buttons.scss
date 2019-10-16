@@ -1,5 +1,5 @@
 /* ==============================
- * BUTTONS
+* BUTTONS
 ================================= */
 
 .btn {
@@ -25,7 +25,6 @@
     background-color: $gray-4;
     color: $primary-color;
   }
-
 }
 
 .btn--icon {
@@ -73,7 +72,7 @@
   &:focus{
     color: $white;
     text-decoration: none;
-    background-color: $primary-color;
+    background: $primary-color;
     border-color: $primary-color;
   }
 }

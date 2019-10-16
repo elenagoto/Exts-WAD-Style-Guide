@@ -1,7 +1,6 @@
 /* ==============================
- * DROPDOWN MENU
+* DROPDOWN MENU
 ================================= */
-
 
 .dropdown-menu  {
   display: none;
@@ -28,7 +27,7 @@
   a:focus {
     display: block;
     text-decoration: underline;
-    background-color: $gray-4;
+    background: $gray-4;
   }
 }
 

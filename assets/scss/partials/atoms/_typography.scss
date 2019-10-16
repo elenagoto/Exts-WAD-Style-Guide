@@ -1,11 +1,11 @@
 /* ==============================
- * TYPOGRAPHY
+* TYPOGRAPHY
  ================================ */
 
- a, p, ul, ol, span, label {
-   font-size: 1.5rem; /* 15px/10px */
-   line-height: 1.6;
- }
+a, p, ul, ol, span, label {
+  font-size: 1.5rem; /* 15px/10px */
+  line-height: 1.6;
+}
 
 h1, h2, h3, h4, h5, h6
 .alpha, .beta, .gamma, .delta, .gamma, .epsilon, .zeta {
@@ -26,8 +26,6 @@ h1, .alpha {
   @include desktop {
     font-size: ($pulse * 3); /* 48px/10px */
   }
-
-
 }
 
 h2, .beta {
@@ -42,7 +40,6 @@ h2, .beta {
   @include desktop {
     font-size: 3.6rem; /* 36px/10px */
   }
-
 }
 
 h3, .gamma {
@@ -75,7 +72,6 @@ h6, .zeta {
   line-height: 1.4;
   color: $gray-1;
 }
-
 
 a {
   text-decoration: none;

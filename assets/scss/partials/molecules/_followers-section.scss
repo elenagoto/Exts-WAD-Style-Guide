@@ -1,3 +1,6 @@
+/* ==============================
+* FOLLOWERS SECTION
+================================= */
 .follower {
   border-bottom: 1px solid $gray-4;
   color: $gray-3;
@@ -21,7 +24,7 @@
 
   &__avatar {
     float: left;
-    padding: 0 $pulse 0 0;
+    padding-right: $pulse;
   }
 
   &__info {
@@ -31,14 +34,12 @@
     }
   }
   
-
   &__btn {
     float: right;
     .btn {
       display: block;
       padding: $pulse 1.2rem;
       text-align: center;
-      vertical-align: middle;
       width: 13rem;
 
       @include tablet {

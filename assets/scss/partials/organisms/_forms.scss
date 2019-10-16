@@ -1,4 +1,7 @@
 
+/* ==============================
+ * FORMS
+================================= */
 .form {
   display: flex;
   flex-direction: column;
@@ -61,6 +64,7 @@
     }
   }
 }
+
 .input--checkbox{
   display: flex;
   justify-content: space-between;
@@ -86,9 +90,7 @@
 }
 
 .input__btn--alone {
-  
   .btn {
       width: 100%;
   }
-
 }

@@ -1,10 +1,10 @@
-/* ==================
+/* ======================
 * DISCUSSION ELEMENTS
-===================== */
+========================= */
 .comments {
   align-items: flex-start;
   display: flex;
-  margin: 0 0 ($pulse * 2.5) 0;
+  margin-bottom: ($pulse * 2.5);
   width: 100%;
 
   @include desktop {
@@ -12,7 +12,7 @@
     }
 }
 .comments__avatar {
-  padding: 0 2rem 0 0;
+  padding-right: 2rem;
 }
 .comments__text {
   width: 100%;
@@ -21,7 +21,7 @@
     flex-direction: column;
     > * {
       margin-bottom: $pulse;
-   }
+  }
 
     &_field {
       @include tablet {
@@ -47,7 +47,6 @@
   margin: 0 0 $pulse 0;
 
   .user__name {
-
     a {
       color: $black;
     }
