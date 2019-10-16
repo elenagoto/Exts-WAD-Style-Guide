@@ -1,0 +1,86 @@
+/* ==============================
+ * CARDS
+================================= */
+
+.cards {
+  margin: 3rem ($pulse * -1.5) 3rem 0;;
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+
+  .card {
+    @include tablet {
+      float: left;
+      width: calc(50% - (#{$pulse} * 1.5));
+    }
+    @include desktop {
+      width: calc(33.33% - (#{$pulse} * 1.5));
+    }
+  }
+}
+
+
+.card {
+  box-shadow: 0 0 20px rgba(0,0,0,0.14);
+  margin: 0 ($pulse * 1.5) $pulse  0;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__thumb {
+    color: $gray-4;
+    font-size: 1.3rem;
+    position: relative;
+    display: block;
+
+    img {
+      width: 100%;
+      display: block;
+      margin: 0 0 -1px 0;
+    }
+
+    h3 {
+      color: $white;
+      font-size: 2rem;
+    }
+  }
+
+// Card text
+  &__intro {
+    padding: 1.2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__title {
+    font-size: 1.6em;
+  }
+
+  &__footer {
+    display: flex;
+    border-top: 1px solid $gray-3;
+
+// Card buttons
+    .btn {
+      border: none;
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      padding: 1.6em;
+    }
+
+    .btn--like{
+      border-right: 1px solid $gray-3;
+      flex: 1 0 auto;
+      text-align: left;
+    }
+  }
+}

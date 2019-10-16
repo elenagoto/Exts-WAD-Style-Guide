@@ -1,0 +1,88 @@
+/* ==============================
+ * BUTTONS
+================================= */
+
+.btn {
+  font-size: 1.3rem;
+  line-height: 1;
+  background: $white;
+  color: $black;
+
+  padding: 1.2rem 1.2rem;
+  margin: 0;
+
+  border: 1px solid $gray-4;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    background-color: $gray-4;
+    color: $primary-color;
+  }
+
+}
+
+.btn--icon {
+  display: flex;
+  align-items: center;
+  color: $gray-1; 
+
+  .icon {
+    fill: currentColor;
+  }
+} 
+
+.btn--cta{
+  background-color: $primary-color;
+  color: $white;
+  border: 1px solid $primary-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+    background-color: darken($primary-color, 20);
+    border-color: darken($primary-color, 15);
+  }
+}
+
+.btn--warning {
+  &:hover,
+  &:active,
+  &:focus{
+    color: $white;
+    text-decoration: none;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+}
+
+.btn--tag {
+  background-color: $gray-4;
+  color: $gray-1;
+  border: 1px solid $gray-4;
+  &:hover,
+  &:active,
+  &:focus{
+    color: $white;
+    text-decoration: none;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.btn--icon {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    fill: currentColor;
+  }
+} 

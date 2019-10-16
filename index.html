@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Bucket List</title>
+      <!--[if !IE]><!-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i" rel="stylesheet">
+    <!--<![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" href="assets/css/universal-ie6.css">
+  <![endif]-->
+  <script src="assets/js/modernizr-custom.js"></script>
+  </head>
+  <body>
+    <!-- ICONS -->
+    <svg style="display: none;">
+      <defs>
+        <symbol id="add-icon">
+          <title>Add icon</title>
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </symbol>
+        <symbol id="favorite-icon">
+          <title>Favorite icon</title>
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </symbol>
+      </defs>
+    </svg>
+    <!-- Start header section  -->
+    <header class="banner banner--index">
+      <div class="global-header">
+        <div class="content-wrapper">
+          <div class="logo logo--invert">
+            <a href="/"><span>My Bucket List</span></a>
+          </div>
+          <form class="search search--cta" action="ideas" method="get">
+            <label for="global-search" class="search__label sr-only">Search</label>
+            <div class="search__row">
+              <input id="global-search" class="search__field" type="text" name="search" placeholder="e.g. Swimming with dolphins"/>
+              <button class="btn btn--cta" type="submit">Search</button>
+            </div>
+          </form>
+          <nav>
+            <ul class="global-nav bare-list">
+              <li><a href="inspiration.html">Inspiration</a></li>
+              <li><a href="sign-up.html">Sign Up</a></li>
+              <li><a href="log-in.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="masthead masthead--index">
+        <div class="content-wrapper">
+          <h1>Get inspired. Create your bucket list. Share.</h1>
+          <form class="search" action="ideas" method="get">
+            <label for="main-search" class="search__label sr-only">Inspire me</label>
+            <div class="search__row">
+              <input id="main-search" class="search__field" type="text" name="search" placeholder="Inspire me..."/>
+              <button class="btn"type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Start main section -->
+    <main class="main main--index">
+      <div class="content-wrapper">
+        <h2>Some ideas</h2>
+
+        <ul class="bare-list cards">
+
+          <li class="card">
+            <a class="card__thumb" href="ideas/see-northen-lights.html">
+              <img src="assets/images/northern-lights-small.jpg" alt="Northern lights above a house at night"
+              srcset="assets/images/northern-lights-small.jpg 300w,
+                      assets/images/northern-lights-large.jpg 600w" />
+              <div class="card__intro">
+                <h3 class="card__title">See the northen lights.</h3>
+                <h5>1,184 doing this</h5>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="btn btn--like"type="submit" name="action" value="like">
+                <svg class="icon" height="20" viewBox="0 0 24 24" width="20">
+                  <use xlink:href="#favorite-icon"></use>
+                </svg>
+                like
+              </button>
+              <button class="btn btn--add"type="submit" name="action" value="addGoal">
+                <svg class="icon" height="20" viewBox="0 0 24 24" width="20">
+                  <use xlink:href="#add-icon"></use>
+                </svg>
+                Add goal
+              </button>
+            </form>
+          </li>
+
+          <li class="card">
+            <a class="card__thumb" href="ideas/swim-with-dolphins">
+              <img src="assets/images/dolphins-small.jpg" alt="Three dolphins swiming under water"
+              srcset="assets/images/dolphins-small.jpg 300w,
+                      assets/images/dolphins-large.jpg 600w" />
+              <div class="card__intro">
+                <h3 class="card__title">Swim with dolphins.</h3>
+                <h5>1,184 doing this</h5>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="btn btn--like"type="submit" name="action" value="like">
+                <svg class="icon" height="20" viewBox="0 0 24 24" width="20">
+                  <use xlink:href="#favorite-icon"></use>
+                </svg>
+                like
+              </button>
+              <button class="btn btn--add"type="submit" name="action" value="addGoal">
+                <svg class="icon" height="20" viewBox="0 0 24 24" width="20">
+                  <use xlink:href="#add-icon"></use>
+                </svg>
+                Add goal
+              </button>
+            </form>
+          </li>
+
+          <li class="card">
+            <a class="card__thumb" href="ideas/dancing.html">
+              <img src="assets/images/dancing-small.jpg" alt="Man dancing with his arms spread out"
+              srcset="assets/images/dancing-small.jpg 300w,
+                      assets/images/dancing-large.jpg 600w" />
+              <div class="card__intro">
+                <h3 class="card__title">Dance like nobody's watching!</h3>
+                <h5>1,184 doing this</h5>
+              </div>
+            </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="btn btn--like"type="submit" name="action" value="like">
+                <svg class="icon icon--liked" height="18" viewBox="0 0 24 24" width="18">
+                  <use xlink:href="#favorite-icon"></use>
+                </svg>
+                liked
+              </button>
+              <button class="btn btn--add"type="submit" name="action" value="addGoal">
+                <svg class="icon" height="20" viewBox="0 0 24 24" width="20">
+                  <use xlink:href="#add-icon"></use>
+                </svg>
+                Add goal
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="see-more">
+        <h4><a href="#">See More...</a></h4>
+      </div>
+    </main>
+
+    <!-- Start footer section -->
+    <footer class="global-footer">
+      <div class="content-wrapper">
+        <div class="nav-footer">
+          <div class="logo logo--invert"><a href="#"><span><em>My</em> Bucket List</span></a></div>
+          <ul class="bare-list">
+            <li><a href="#">About</a></li>
+            <li><a href="pages/atoms.html">Style Guide</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+        <p>&copy; EPFL 2017</p>
+      </div>
+    </footer>
+  </body>
+</html>

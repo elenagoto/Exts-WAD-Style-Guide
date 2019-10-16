@@ -1,0 +1,40 @@
+.goal {
+  > * {
+    margin-bottom: $pulse;
+  }
+
+  &__btn, &__tags {
+    margin-right: ($pulse * -1);
+  }
+
+  @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: $pulse * 2;
+      grid-row-gap: $pulse;
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas: "img owner"
+                           "img title"
+                           "img btn"
+                           "img description"
+                           "img stats"
+                           "img tags";
+      
+      > * {
+    margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    } 
+
+    @include desktop {
+      grid-area: img;
+    }
+  }
+
+  
+
+}
