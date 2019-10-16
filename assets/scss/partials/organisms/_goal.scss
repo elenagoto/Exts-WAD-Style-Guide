@@ -2,39 +2,63 @@
  * GOAL 
 ================================= */
 .goal {
-  > * {
+  &__content > * {
     margin-bottom: $pulse;
   }
 
   &__btn, &__tags {
     margin-right: ($pulse * -1);
   }
+  &__img {
+    margin-bottom: $pulse;
+    img {
+      width: 100%;
+    }
+  }
 
   @include desktop {
+    &::after {
+      display: table;
+      content: " ";
+      clear: both;
+    }
+
+    &__img {
+      float: left;
+      width: 48%;
+    }
+    &__content {
+      float: right;
+      width: 48%;
+    }
+  }
+}
+/* Enhancement */
+.goal {
+  @supports (display: grid) {
+    @include desktop {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: $pulse * 2;
       grid-row-gap: $pulse;
       grid-template-rows: repeat(6, auto);
       grid-template-areas: "img owner"
-                           "img title"
-                           "img btn"
-                           "img description"
-                           "img stats"
-                           "img tags";
+                            "img title"
+                            "img btn"
+                            "img description"
+                            "img stats"
+                            "img tags";
       
       > * {
-    margin-bottom: 0;
-    }
-  }
-
-  &__img {
-    img {
+        margin-bottom: 0;
+      }
+      &__img {
+        width: 100%;
+        grid-area: img;
+      }
+      &__content {
       width: 100%;
-    } 
-
-    @include desktop {
-      grid-area: img;
+      }
     }
   }
 }
