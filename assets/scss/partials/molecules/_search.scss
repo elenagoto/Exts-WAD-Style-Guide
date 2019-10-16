@@ -15,9 +15,13 @@
   &__field {
     background-color: $white;
     border: 1px solid $gray-4;
-    padding-left: 1em;
+    padding-left: 1rem;
     font-size: inherit;
     margin: 0;
+
+    @include tablet {
+      padding-left: 1em;
+    }
 
     &:focus {
       border-color: $gray-1;

@@ -28,15 +28,10 @@
     display: block;
     padding: 1em;
     font-size: inherit;
-    margin: 0 0 1rem 0;
     width: 100%;
 
     &--warning {
       border: 1px solid $secondary-color;
-    }
-
-    @include tablet {
-      margin-bottom: 0;
     }
   }
 }  
