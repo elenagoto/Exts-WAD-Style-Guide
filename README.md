@@ -12,7 +12,7 @@ The changes and additions in this version are:
 
 - Corrected margin problems that were forcing a horizontal scrolling.
 - Added missing viewport metadata to the style guide pages.
-- Added extra enhancement to the *goal* organism by adding a feature query with `@supports (display: gid)`.
+- Added extra enhancement to the *goal* organism by adding a feature query with `@supports (display: grid)`.
 
 The responsive desing can also be tested using the following URL:
 
