@@ -16,4 +16,4 @@ The changes and additions in this version are:
 
 The responsive desing can also be tested using the following URL:
 
-<https://elenagoto.ch/epfl/style-guide/pages/atoms.html>
+<https://elenagoto.ch/epfl/wad-first-project/style-guide/atoms.html>
